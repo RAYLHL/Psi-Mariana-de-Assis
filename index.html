@@ -22,12 +22,21 @@
         </nav>
     </header>
     <section class="hero">
-        <div class="bg-hero">
-            <img src="img/hero.png" alt="background hero">
+        <div class="grid-hero">
+            <div class="grid-esquerda">
+                <h1>Mariana de Assis</h1>
+                <p class="texto-hero">Cuidar da sua mente é o primeiro passo para transformar sua vida.</p>
+                <button>Agendar Consulta</button>
+            </div>
+            <div class="grid-direita">
+                <p>CUIDADO</p>
+                <p>CALMA</p>
+                <p>LEVEZA</p>
+                <p>HARMONIA</p>
+            </div>
+            <div class="grid-hero-circulo"></div>
+            <img src="img/mariana-perfil.png" alt="Imagem Mariana Perfil">
         </div>
-        <h1>Mariana de Assis</h1>
-        <p class="texto-hero">Cuidar da sua mente e o primeiro passo para transformar sua vida.</p>
-        <button>Agendar Consulta</button>
     </section>
     <section class="sobre">
         <div class="elementos-sobre">
@@ -39,34 +48,39 @@
                 <img src="img/sobre elementos.png" alt="">
             </div>
             <div class="sobre-container-texto">
-            <h2>
-                Mariana de Assis Henrique
-            </h2>
-            <p>
-                Olá, me chamo Mariana de Assis Henrique. <br>Sou administradora e psicóloga em formação, atualmente em
-                fase
-                final da graduação, com conclusão prevista para 2026.
-            </p>
-            <p>
-                Após a conclusão da graduação, pretendo oferecer atendimentos no formato online, proporcionando um
-                espaço de
-                escuta acolhedor, com flexibilidade e acesso — especialmente para pessoas que buscam cuidado emocional
-                em
-                sua própria língua, mesmo estando fora do Brasil.
-            </p>
-            <p>
-                Acredito na psicoterapia como um processo de construção conjunta, que respeita a singularidade de cada
-                história e considera as experiências, relações e contextos que fazem parte de quem você é.
-            </p>
-            <p> Meu trabalho é guiado pelo compromisso ético e pela criação de um ambiente seguro, onde você possa se
-                expressar com liberdade e, no seu tempo, desenvolver novas formas de compreender a si mesmo(a) e lidar
-                com
-                suas experiências.
-            </p>
-            <p>
-                Ficarei feliz em poder fazer parte do seu processo, no momento oportuno.
-            </p>
-        </div>
+                <h2>
+                    Mariana de Assis Henrique
+                </h2>
+                <p>
+                    Olá, me chamo Mariana de Assis Henrique. <br>Sou administradora e psicóloga em formação, atualmente
+                    em
+                    fase
+                    final da graduação, com conclusão prevista para 2026.
+                </p>
+                <p>
+                    Após a conclusão da graduação, pretendo oferecer atendimentos no formato online, proporcionando um
+                    espaço de
+                    escuta acolhedor, com flexibilidade e acesso — especialmente para pessoas que buscam cuidado
+                    emocional
+                    em
+                    sua própria língua, mesmo estando fora do Brasil.
+                </p>
+                <p>
+                    Acredito na psicoterapia como um processo de construção conjunta, que respeita a singularidade de
+                    cada
+                    história e considera as experiências, relações e contextos que fazem parte de quem você é.
+                </p>
+                <p> Meu trabalho é guiado pelo compromisso ético e pela criação de um ambiente seguro, onde você possa
+                    se
+                    expressar com liberdade e, no seu tempo, desenvolver novas formas de compreender a si mesmo(a) e
+                    lidar
+                    com
+                    suas experiências.
+                </p>
+                <p>
+                    Ficarei feliz em poder fazer parte do seu processo, no momento oportuno.
+                </p>
+            </div>
     </section>
     <section class="atendimentos">
         <div class="atendimento-container">
@@ -120,13 +134,13 @@
             <div class="form-section">
                 <h2>Seus Dados:</h2>
                 <div class="form-group" id="msgNome">
-                    <input type="text" placeholder="Seu nome completo" name="nome" id="input-nome">
+                    <input type="text" placeholder="Seu nome completo" name="nome" id="input-nome" minlength="5" maxlength="50">
                 </div>
 
                 <div class="form-row">
-                    <input type="text" placeholder="(DDD) 99999-9999" name="numero" id="input-numero">
+                    <input type="text" placeholder="(DDD) 99999-9999" name="numero" id="input-numero" min="10" maxlength="11">
 
-                    <input type="text" placeholder="email@exemplo.com" id="input-email">
+                    <input type="text" placeholder="email@exemplo.com" id="input-email" minlength="7" maxlength="23">
                 </div>
                 <p id="resultMensagem"></p>
             </div>
