@@ -72,7 +72,7 @@ section {
         width: 26rem;
         color: var(--cinza-texto);
     }
-  
+
     button {
         background-color: var(--amarelo-contraste);
         border: var(--cinza-texto) solid 1px;
@@ -84,6 +84,7 @@ section {
     }
 
     .bg-hero {
+        align-self: center;
         position: absolute;
         top: 0;
         left: 0;
@@ -92,8 +93,6 @@ section {
         z-index: -1;
         object-fit: fill;
     }
-
-
 }
 
 .sobre {
@@ -102,7 +101,7 @@ section {
     font-family: var(--fonte-secundaria);
     justify-content: center;
     align-items: end;
-    padding: 420px 100px 0 0;
+    padding: 420px 150px 0 0;
 
 
     h2 {
@@ -214,8 +213,9 @@ section {
 .form-wrapper {
     display: flex;
     justify-content: center;
-    padding: 60px 0; 
+    padding: 60px 0;
 }
+
 .formulario {
     display: flex;
     flex-direction: column;
@@ -260,20 +260,24 @@ section {
         flex-direction: column;
         gap: 20px;
     }
-    .form-section h2{
+
+    .form-section h2 {
         font-size: 1.25rem;
         font-weight: 700;
         color: var(--cinza-texto);
     }
+
     .form-section label {
         font-size: 1rem;
         font-weight: 600;
         color: var(--cinza-texto);
         margin-bottom: 10px;
     }
+
     #input-email {
         width: 100%;
     }
+
     .form-row {
         display: flex;
         gap: 20px;
@@ -301,6 +305,7 @@ section {
         padding: 15px;
         font-size: 1rem;
     }
+
     .radio-group {
         display: flex;
         gap: 20px;
@@ -325,11 +330,12 @@ section {
         transition: all 0.2s ease;
         box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
     }
+
     button:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
-    
+
 }
 
 /* Perguntas Frequentes */
