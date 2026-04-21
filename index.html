@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psi Mariana de Assis</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -27,10 +30,15 @@
         <button>Agendar Consulta</button>
     </section>
     <section class="sobre">
-        <div class="bg-sobre">
-            <img src="img/sobre.png" alt="background sobre">
+        <div class="elementos-sobre">
+            <div class="circulo"></div>
+            <img src="img/mariana sobre.png" alt="Imagem Mariana">
         </div>
         <div class="sobre-container">
+            <div>
+                <img src="img/sobre elementos.png" alt="">
+            </div>
+            <div class="sobre-container-texto">
             <h2>
                 Mariana de Assis Henrique
             </h2>
@@ -57,7 +65,6 @@
             </p>
             <p>
                 Ficarei feliz em poder fazer parte do seu processo, no momento oportuno.
-
             </p>
         </div>
     </section>
@@ -97,10 +104,8 @@
                     <p>Sessões semana focadas no seu processo pessoal </p>
                 </div>
             </div>
-            <div class="bg-atendimentos">
-                <img src="img/atendimentos.png" alt="atendimentos background">
-            </div>
         </div>
+        <img src="img/mariana atendimento.png" alt="imagem Mariana atendimento">
     </section>
 
     <div class="form-wrapper">
@@ -109,79 +114,59 @@
             <div class="form-header">
                 <h2>Agende aqui sua consulta</h2>
                 <h3>
-                Preencha o formulário abaixo para marcar sua consulta comigo e aguarde a confirmação no WhatsApp.
+                    Preencha o formulário abaixo para marcar sua consulta comigo e aguarde a confirmação no WhatsApp.
                 </h3>
             </div>
-
             <div class="form-section">
                 <h2>Seus Dados:</h2>
-                    <div class="form-group" id="msgNome">
-                        <input 
-                        type="text" 
-                        placeholder="Seu nome completo" 
-                        name="nome"
-                        id="input-nome">
-                    </div>
+                <div class="form-group" id="msgNome">
+                    <input type="text" placeholder="Seu nome completo" name="nome" id="input-nome">
+                </div>
 
-                    <div class="form-row">
-                        <input 
-                        type="text" 
-                        placeholder="(DDD) 99999-9999" 
-                        name="numero"
-                        id="input-numero">
-            
-                        <input 
-                        type="text" 
-                        placeholder="email@exemplo.com" 
-                        id="input-email">
-                        </div>
-                        <p id="resultMensagem"></p>
-                    </div>
+                <div class="form-row">
+                    <input type="text" placeholder="(DDD) 99999-9999" name="numero" id="input-numero">
+
+                    <input type="text" placeholder="email@exemplo.com" id="input-email">
+                </div>
+                <p id="resultMensagem"></p>
+            </div>
 
             <div class="form-section">
                 <h2>Detalhes do agendamento</h2>
 
                 <div class="form-row">
-                <div class="form-group">
-                    <label>Data desejada</label>
-                    <input 
-                    type="date"
-                    id="input-data">
-                </div>
+                    <div class="form-group">
+                        <label>Data desejada</label>
+                        <input type="date" id="input-data">
+                    </div>
 
-                <div class="form-group">
-                    <label>Horário desejado</label>
-                    <select id="input-horario">
-                        <option value="">Selecione</option>
-                        <option value="8:00 - 9:00">8:00 - 9:00</option>
-                        <option value="9:00 - 10:00">9:00 - 10:00</option>
-                    </select>
-                </div>
+                    <div class="form-group">
+                        <label>Horário desejado</label>
+                        <select id="input-horario">
+                            <option value="">Selecione</option>
+                            <option value="8:00 - 9:00">8:00 - 9:00</option>
+                            <option value="9:00 - 10:00">9:00 - 10:00</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="form-row">
-                <div class="form-group">
-                    <label>Tipo consulta</label>
-                    <select id="input-tipo-consulta">
-                        <option value="">Selecione</option>
-                        <option value="primeira-consulta">Primeira consulta</option>
-                        <option value="retorno">Retorno</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Forma de atendimento</label>
-                    <div class="radio-group">
-                    <label><input 
-                        type="radio" 
-                        name="tipo" 
-                        value="presencial"> Presencial
-                    <label><input 
-                        type="radio" 
-                        name="tipo" 
-                        value="online"> Online</label>
+                    <div class="form-group">
+                        <label>Tipo consulta</label>
+                        <select id="input-tipo-consulta">
+                            <option value="">Selecione</option>
+                            <option value="primeira-consulta">Primeira consulta</option>
+                            <option value="retorno">Retorno</option>
+                        </select>
                     </div>
-                </div>
+
+                    <div class="form-group">
+                        <label>Forma de atendimento</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="tipo" value="presencial"> Presencial
+                                <label><input type="radio" name="tipo" value="online"> Online</label>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -197,44 +182,44 @@
             <h2>Perguntas frequentes</h2>
 
             <div class="faq-item">
-            <button class="faq-question">
-                <span>Depoimento dos Pacientes</span>
+                <button class="faq-question">
+                    <span>Depoimento dos Pacientes</span>
 
-                <span class="icon">
-                    <img src="img/icon-faq.png" alt="Abrir pergunta">
-                </span>
-            </button>
-            <div class="faq-answer">
-                <p>
-                Acredito na psicoterapia como um processo de construção conjunta...
-                </p>
-            </div>
+                    <span class="icon">
+                        <img src="img/icon-faq.png" alt="Abrir pergunta">
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Acredito na psicoterapia como um processo de construção conjunta...
+                    </p>
+                </div>
             </div>
 
             <div class="faq-item">
-            <button class="faq-question">
-                <span>Depoimento dos Pacientes</span>
+                <button class="faq-question">
+                    <span>Depoimento dos Pacientes</span>
 
-                <span class="icon">
-                    <img src="img/icon-faq.png" alt="Abrir pergunta">
-                </span>
-            </button>
-            <div class="faq-answer"></div>
+                    <span class="icon">
+                        <img src="img/icon-faq.png" alt="Abrir pergunta">
+                    </span>
+                </button>
+                <div class="faq-answer"></div>
             </div>
 
             <div class="faq-item active">
-            <button class="faq-question">
-                <span>Depoimento dos Pacientes</span>
+                <button class="faq-question">
+                    <span>Depoimento dos Pacientes</span>
 
-                <span class="icon">
-                    <img src="img/icon-faq.png" alt="Abrir pergunta">
-                </span>
-            </button>
-            <div class="faq-answer">
-                <p>
-                Acredito na psicoterapia como um processo de construção conjunta...
-                </p>
-            </div>
+                    <span class="icon">
+                        <img src="img/icon-faq.png" alt="Abrir pergunta">
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Acredito na psicoterapia como um processo de construção conjunta...
+                    </p>
+                </div>
             </div>
 
         </section>
@@ -258,7 +243,7 @@
                 <a href="#">avaliações</a>
             </nav>
 
-     
+
             <div class="footer-social">
                 <a href="#"><img src="img/icon-whatsapp.png"></a>
                 <a href="#"><img src="img/icon-instagram.png"></a>
