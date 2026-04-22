@@ -1,0 +1,97 @@
+.hero {
+    font-family: var(--fonte-principal);
+    overflow: hidden;
+    height: 1000px;
+
+    .grid-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(to right,
+                color-mix(in srgb, var(--amarelo-contraste) 40%, transparent) 60%,
+                transparent 50%);
+
+        .grid-esquerda {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+            gap: 60px;
+            grid-column: 1 / 2;
+            grid-row: 1;
+            z-index: 2;
+
+            h1 {
+                font-size: 6.25rem;
+                font-weight: 800;
+                color: var(--cinza-texto);
+                width: 34rem;
+            }
+
+            .texto-hero {
+                font-size: 2.063rem;
+                text-align: left;
+                color: var(--cinza-texto);
+            }
+
+
+            button {
+                background-color: var(--amarelo-contraste);
+                border: var(--cinza-texto) solid 1px;
+                padding: 20px;
+                border-radius: 20px;
+                font-size: 1.875rem;
+                font-weight: 600;
+                color: var(--cinza-texto);
+            }
+        }
+
+        .grid-direita {
+            grid-column: 3 / 4;
+            grid-row: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 40px;
+            padding-left: 120px;
+            color: var(--cinza-texto);
+            z-index: 2;
+        }
+
+        .grid-direita p {
+            font-size: 7.5rem;
+            font-weight: 800;
+            color: color-mix(in srgb, var(--cinza-texto-dois) 40%, transparent);
+            font-family: var(--fonte-principal);
+            z-index: 2;
+            text-align: right;
+        }
+
+        .grid-hero-circulo {
+            grid-column: 3 / 4;
+            grid-row: 1;
+            position: absolute;
+            width: 800px;
+            height: 100%;
+            background-color: var(--amarelo-contraste);
+            border-radius: 50%;
+            top: 50%;
+            left: 100%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        img {
+            grid-column: 3 / 4;
+            grid-row: 1;
+            z-index: 3;
+            position: absolute;
+            place-self: center;
+            margin-right: 50%;
+        }
+    }
+}
