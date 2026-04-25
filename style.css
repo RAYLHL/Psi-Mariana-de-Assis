@@ -165,7 +165,7 @@ a:hover::after {
 }
 
 
-@media (max-width: 639px) {
+@media (max-width: 690px) {
 
     header nav {
         width: 100%;
@@ -187,7 +187,7 @@ a:hover::after {
 /* ─────────────────────────────────────────
    MOBILE ≤ 480px
 ───────────────────────────────────────── */
-@media (max-width: 480px) {
+@media (max-width: 510px) {
  
     header nav {
         display: flex;
@@ -249,6 +249,8 @@ a:hover::after {
     header nav::before {
         content: "Mariana de Assis";
         font-size: 1.3rem;
+        justify-content: center;
+        margin-top: 0.65rem;
         font-weight: 800;
         color: var(--cinza-texto);
         font-family: var(--fonte-secundaria);

@@ -111,10 +111,30 @@
                 color-mix(in srgb, var(--amarelo-contraste) 40%, transparent) 100%,
                 transparent 0%);
         height: auto;
-        min-height: 530px;
+        min-height: 400px;
         overflow: hidden;
         width: 100%;
     }
+
+    /* "PSICOLOGA" decorativo */
+    .hero::before {
+        content: "PSICOLOGA";
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 100%;
+        text-align: start;
+        font-size: 4rem;
+        font-weight: 900;
+        color: color-mix(in srgb, var(--cinza-texto) 15%, transparent);
+        font-family: var(--fonte-principal);
+        letter-spacing: 0.05em;
+        z-index: 1;
+        pointer-events: none;
+        white-space: nowrap;
+        padding-top: 20px;
+    }
+ 
  
     .hero .grid-hero {
         display: flex;

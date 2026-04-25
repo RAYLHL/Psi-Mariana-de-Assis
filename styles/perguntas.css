@@ -85,6 +85,10 @@
         box-sizing: border-box;
         padding: 0 1.25rem;
     }
+    i {
+        border-radius: 50%;
+        padding: 10px 7.5px !important;
+    }
 
     .perguntas .perguntas-container {
         padding: 2rem 1.25rem;
