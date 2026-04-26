@@ -84,6 +84,16 @@ form.addEventListener('submit', async (event) => {
         nome.classList.add('input-erro');
         nome.placeholder = 'Nome é obrigatório!';
         enviarForm = false;
+    } else if (nome.value.trim().length < 9) {
+        nome.classList.add('input-erro');
+        nome.value = '';
+        nome.placeholder = 'Nome muito curto! (Digite seu nome completo!)';
+        enviarForm = false;
+    } else if (nome.value.trim().length > 40) {
+        nome.classList.add('input-erro');
+        nome.value = '';
+        nome.placeholder = 'Nome muito longo! (máx. 50 caracteres)';
+        enviarForm = false;
     }
 
     // TELEFONE
@@ -96,7 +106,22 @@ form.addEventListener('submit', async (event) => {
     }
 
     // EMAIL
-    if (!validarEmail(email.value)) {
+    if (!email.value.trim()) {
+        email.classList.add('input-erro');
+        resultMensagem.textContent = 'E-mail é obrigatório!';
+        resultMensagem.style.color = 'red';
+        enviarForm = false;
+    } else if (email.value.trim().length < 10) {
+        email.classList.add('input-erro');
+        resultMensagem.textContent = 'E-mail muito curto!';
+        resultMensagem.style.color = 'red';
+        enviarForm = false;
+    } else if (email.value.trim().length > 30) {
+        email.classList.add('input-erro');
+        resultMensagem.textContent = 'E-mail muito longo! (máx. 30 caracteres)';
+        resultMensagem.style.color = 'red';
+        enviarForm = false;
+    } else if (!validarEmail(email.value)) {
         email.classList.add('input-erro');
         resultMensagem.textContent = 'E-mail inválido!';
         resultMensagem.style.color = 'red';
